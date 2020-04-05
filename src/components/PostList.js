@@ -1,19 +1,19 @@
-import React from "react"
-import PostCard from "./PostCard"
-import styles from "../css/postlist.module.css"
+import React from "react";
+import PostCard from "./PostCard";
+import styles from "../css/postlist.module.css";
 
 const PostList = ({ posts }) => {
   return (
     <section className={styles.posts}>
       <h1>milan josipovic</h1>
-      <h4>personal blog</h4>
+      <h4>javascript blog</h4>
       <div className={styles.center}>
         {posts.map(({ node }, index) => {
-          return <PostCard key={index} post={node} />
+          return <PostCard key={index} post={node} />;
         })}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PostList
+export default PostList;
